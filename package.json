@@ -1,0 +1,59 @@
+{
+  "name": "tentwenty-app-test",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "start:reset": "expo start --clear",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "typecheck": "tsc --noEmit",
+    "lint": "expo lint",
+    "test": "jest",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\" \"__tests__/**/*.ts\"",
+    "validate": "npm run typecheck && npm run lint && npm test"
+  },
+  "dependencies": {
+    "@react-native-community/netinfo": "12.0.1",
+    "@react-navigation/bottom-tabs": "^7.19.2",
+    "@react-navigation/native": "^7.4.1",
+    "@react-navigation/native-stack": "^7.19.2",
+    "@shopify/flash-list": "2.0.2",
+    "@tanstack/query-sync-storage-persister": "^5.103.2",
+    "@tanstack/react-query": "^5.103.2",
+    "@tanstack/react-query-persist-client": "^5.103.2",
+    "axios": "^1.20.0",
+    "expo": "~57.0.24",
+    "expo-build-properties": "~57.0.21",
+    "expo-font": "~57.0.4",
+    "expo-image": "~57.0.5",
+    "expo-linear-gradient": "~57.0.2",
+    "expo-screen-orientation": "~57.0.2",
+    "expo-splash-screen": "~57.0.9",
+    "expo-sqlite": "~57.0.3",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0",
+    "react-native-svg": "15.15.4",
+    "react-native-webview": "13.16.1",
+    "zustand": "^5.0.15"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/react": "~19.2.4",
+    "babel-plugin-module-resolver": "^5.0.3",
+    "babel-preset-expo": "~57.0.0",
+    "eslint": "^9.39.5",
+    "eslint-config-expo": "^57.0.2",
+    "jest": "^29.7.0",
+    "jest-expo": "^57.0.5",
+    "prettier": "^3.9.9",
+    "typescript": "^6.0.3"
+  }
+}
